@@ -1,0 +1,131 @@
+{
+  "common": {
+    "GetAConsultation": "Get a consultation",
+    "contact": "Contact",
+    "RequestConsultation": "Request a Consultation",
+    "RequestConsultationSupTitle": "We are happy to answer your questions"
+  },
+  "nav": ["Families", "Become a surrogate mother", "Egg donation", "About the clinic", "Contacts"],
+  "family": {
+    "hero": {
+      "title": "Surrogacy Center motherhood",
+      "desc": "high quality, comfortable and safe"
+    },
+    "about": {
+      "title": "What is surrogacy?",
+      "articles": [
+        "Surrogacy is a method to overcome infertility in which a woman (the surrogate mother) takes on the responsibility of carrying and giving birth to a child with whom she has no genetic connection, for a couple or individual who will become the legal parents of the child after birth.",
+        "The creation of an embryo for transfer to the surrogate mother is carried out through in vitro fertilization (IVF) using the biological parents' reproductive cells.",
+        "According to legal regulations, a surrogate mother cannot have a genetic relationship with the child. Therefore, the surrogate mother is not permitted to also serve as an egg donor within the program."
+      ],
+      "desc": "Quality of a candidate for participation in the Surrogacy program",
+      "conditions": [
+        {
+          "title": "Age",
+          "desc": "The candidate must be between 21 and 35 years old, as this is the safest period for pregnancy and childbirth."
+        },
+        {
+          "title": "Having your own child",
+          "desc": "It is necessary to have at least one healthy child born without complications, which confirms the woman's ability to successfully go through pregnancy and childbirth"
+        },
+        {
+          "title": "No cesarean section",
+          "desc": "There must be no information about the child being born by caesarean section"
+        },
+        {
+          "title": "Rhesus factor",
+          "desc": "A positive Rh factor is required."
+        },
+        {
+          "title": "Physical and mental health",
+          "desc": "The candidate must be in good physical and mental condition, without chronic diseases and medical contraindications for bearing a child."
+        },
+        {
+          "title": "Absence of deprivation of parental rights",
+          "desc": "The candidate should not have any problems with the guardianship authorities and there should be no deprivation of parental rights in her biography."
+        },
+        {
+          "title": "Honesty before the law",
+          "desc": "No criminal record and no status of suspect or accused in a criminal case"
+        }
+      ]
+    },
+    "video": {
+      "firstBlock": "Video interview with surrogate mother",
+      "secondBlock": "Video interview with a lawyer"
+    },
+    "info": {
+      "infoBlock": [
+        {
+          "title": "To biological parents",
+          "desc": [
+            "Our surrogacy center offers a wide range of programs for couples and single women who dream of having a child.",
+            "We provide comprehensive solutions that consider all aspects of reproductive technologies and ensure complete confidentiality of information about the biological parents."
+          ]
+        },
+        {
+          "title": "To biological parents",
+          "desc": [
+            "Our programs cover all key stages—from organizational to medical and legal—without long waiting periods.",
+            "One of our top priorities is achieving a successful outcome. We do everything possible to ensure that the pregnancy and birth process takes place in the most comfortable conditions."
+          ]
+        }
+      ],
+      "information": [
+        "Selection of surrogate mother-without waiting",
+        "Management of pregnancy and childbirth in the best clinic",
+        "Organization of Nutrition and Accommodation for the Surrogate Mother",
+        "Monitoring at All Stages of the Program",
+        "Comprehensive Legal Support",
+        "100% confidentiality guaranteed"
+      ]
+    },
+    "programStages": {
+      "title": "Program stages",
+      "data": [
+        {
+          "title": "Contract Signing",
+          "desc": "At the initial consultation, Genetic parents become more familiar with the content of the Center's programs and their main stages. At the initial consultation, Genetic parents become more familiar with the content of the Center's programs and their main stages."
+        },
+        {
+          "title": "Contract Signing",
+          "desc": "After selecting the appropriate program, the genetic parents sign a contract with the Center, which then begins searching for a candidate to serve as the surrogate mother and prepares her for embryo transfer according to the schedule specified in the contract."
+        },
+        {
+          "title": "Medical Screening",
+          "desc": "Before joining the program, the surrogate candidate must undergo a medical examination. The Center organizes this screening at medical facilities. If the tests and examination results are favorable, which will be communicated to the genetic parents, the candidate receives final approval."
+        },
+        {
+          "title": "Contract with the Surrogate Mother",
+          "desc": "The Center prepares a personalized surrogacy agreement with the surrogate mother, acting on behalf of either the Center or the genetic parents."
+        },
+        {
+          "title": "Preparation of the Surrogate Mother for Embryo Transfer",
+          "desc": "Based on the screening results, the reproductive specialist prescribes medications for the surrogate candidate to prepare her endometrium for embryo transfer (hormonal therapy)."
+        },
+        {
+          "title": "Embryo Transfer",
+          "desc": "On the appointed day, the embryo is transferred to the surrogate mother’s uterus. At 6-8 weeks of pregnancy, an ultrasound is performed to confirm successful implantation and detect the fetal heartbeat, marking the onset of pregnancy."
+        },
+        {
+          "title": "Pregnancy Care for the Surrogate Mother",
+          "desc": "During the entire pregnancy, the surrogate mother lives in a specialized apartment. A coordinator from the Center is assigned to ensure compliance with doctor’s instructions, a proper regimen, nutrition, and to assist with daily needs and leisure activities. The surrogate mother undergoes regular medical check-ups and is provided with necessary medications if needed."
+        },
+        {
+          "title": "Documentation for the Newborn",
+          "desc": "After the baby’s birth, the Center arranges for the notarized consent of the surrogate mother to list the genetic parents as the legal parents on the birth certificate and confirms the surrogate’s absence of any claims."
+        }
+      ]
+    },
+    "law": {
+      "title": "In our country, surrogacy is safe and regulated by law",
+      "supTitle": "Family Code of the Kyrgyz Republic"
+    }
+  },
+  "footer": {
+    "subtitles": ["Office", "Work schedule", "We are on social networks"],
+    "office": "c. Bishkek. Pervomaisky district. ul. M. Gorky 129",
+    "schedule": "Mon-Fri 9:00-18:00",
+    "scheduleInfo": "Calls and inquiries are accepted during business hours"
+  }
+}
