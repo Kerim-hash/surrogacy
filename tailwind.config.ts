@@ -26,7 +26,7 @@ const config: Config = {
       fontFamily: {
         oxygen: ['"Oxygen"', 'sans-serif'],
         openSans: ['"Open Sans"', 'sans-serif'],
-        lato: ['"Lato"', 'sans-serif'], // Adding Lato font
+        // lato: ['"Lato"', 'sans-serif'], // Adding Lato font
       },
       lineHeight: {
         '70p4': '70.4px',

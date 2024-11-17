@@ -4,8 +4,8 @@ import { DictionaryType } from '../dictionaries/type';
  * Object containing functions that import and return dictionaries based on the specified language key.
  */
 const dictionaries: Record<string, () => Promise<DictionaryType>> = {
-	en: () => import('../dictionaries/en.json').then((module) => module.default),
 	ru: () => import('../dictionaries/ru.json').then((module) => module.default),
+	en: () => import('../dictionaries/en.json').then((module) => module.default),
 };
 
 /**

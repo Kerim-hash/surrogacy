@@ -1,9 +1,8 @@
 import '@/app/styles/globals.css';
 import type { Metadata } from 'next';
-import { Open_Sans, Lato} from 'next/font/google';
+import { Open_Sans} from 'next/font/google';
 
 const open = Open_Sans({ subsets: ['latin'] });
-export const lato = Open_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Surrogacy Centermotherhood',
