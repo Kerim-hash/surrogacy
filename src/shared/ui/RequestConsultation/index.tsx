@@ -1,11 +1,10 @@
 import React, { FC } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
-import { useDictionary } from "@/shared/lib/hooks";
 import { DictionaryType } from "@/shared/config/i18n";
 
 const RequestConsultation: FC<{ dictionary: DictionaryType, sticky?: boolean }> = ({ dictionary, sticky }) => {
     return <motion.div
-        className={`${sticky ? "sticky" : ""} top-20 self-start p-6 bg-accent max-h-[184px] h-full rounded-4xl text-center`}
+        className={`${sticky ? "sticky" : ""} top-20 self-start p-6 bg-background max-h-[184px] h-full rounded-4xl text-center`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}

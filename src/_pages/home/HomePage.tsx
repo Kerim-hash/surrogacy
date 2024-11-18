@@ -7,7 +7,7 @@ import About from './section/about';
 import Video from './section/video';
 import Animation from './section/Animation';
 import Info from './section/Info';
-import ProgramStages from './section/ProgramStages';
+import ProgramStages from './section/programStages';
 import RequestConsultation from '@/shared/ui/RequestConsultation';
 import Law from './section/law';
 
