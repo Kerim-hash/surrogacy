@@ -171,6 +171,56 @@
       "position": "Hu Deyu, CEO of TANG Medical Center"
     }
   },
+  "contacts": {
+      "title": "Contacts",
+      "supTitle": "You can contact us in a number of ways"
+  },
+  "eggDonation": {
+     "hero": {
+      "title": "Egg donation - give a chance for happiness"
+     },
+     "about": {
+      "title": "What is egg donation?",
+      "desc": "Egg donation is a noble opportunity to help those who dream of having children but cannot have them for medical reasons. By joining the program, you can give the joy of motherhood to others while receiving a full medical examination and compensation.",
+      "supTitle": "Who can become a donor?",
+      "underTitle": "You must meet a few basic criteria to qualify for the program:",
+      "list" :[
+        "Ages 20 to 35.",
+        "Good physical and mental health.",
+        "Absence of hereditary diseases and bad habits.",
+        "Having a healthy child of your own is an advantage."
+      ],
+      "stages": {
+        "title": "Stages of the program",
+        "stagesList": [
+          {
+            "title": "Initial consultation and application",
+            "desc": "Our experts will explain the program, answer your questions, and conduct an initial assessment."
+          },
+          {
+            "title": "Selecting a questionnaire",
+            "desc":"If your profile is of interest to the family, a manager will contact you and invite you to the clinic to join the program."
+          },
+          {
+            "title": "Medical examination",
+            "desc": "A set of tests and exams to assess your health and readiness for donation."
+          },
+          {
+            "title":"Legal formalization",
+            "desc": "Signing a contract that protects your rights and privacy."
+          },
+          {
+            "title": "Oocyte retrieval procedure",
+            "desc": "The procedure is carried out under anesthesia, takes a few minutes, and the next day you can return to your usual life."
+          },
+          {
+            "title": "Embryo transfer",
+            "desc": "A course of drugs to increase the number of eggs and prepare the recipient's endometrium for the implantation of a fertilized egg."
+          }
+        ]
+      }
+     }
+  },
   "footer": {
     "subtitles": ["Office", "Work schedule", "We are on social networks"],
     "office": "c. Bishkek. Pervomaisky district. ul. M. Gorky 129",

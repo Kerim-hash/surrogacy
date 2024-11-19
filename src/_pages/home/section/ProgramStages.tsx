@@ -1,6 +1,5 @@
 import AccordionStages from "@/features/Accordion/ui/accordion-stages";
 import { DictionaryType } from "@/shared/config/i18n";
-import { useDictionary } from "@/shared/lib/hooks";
 import React, { FC } from "react";
 
 const ProgramStages: FC<{dictionary: DictionaryType}> = ({dictionary}) => {

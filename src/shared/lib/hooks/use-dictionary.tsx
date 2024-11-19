@@ -11,3 +11,5 @@ const useDictionary = () => {
 };
 
 export default useDictionary;
+
+// 1 license component 9 sections

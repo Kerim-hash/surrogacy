@@ -12,9 +12,9 @@ const Header: FC = () => {
   const navigation = [
     { name: dictionary.nav, link: '' },
     { name: dictionary.nav, link: '1' },
-    { name: dictionary.nav, link: '2' },
+    { name: dictionary.nav, link: 'egg-donation' },
     { name: dictionary.nav, link: 'about' },
-    { name: dictionary.nav, link: '4' }
+    { name: dictionary.nav, link: 'contacts' }
   ];
 
   const [currentPath, setCurrentPath] = useState("");
