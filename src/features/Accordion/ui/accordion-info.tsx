@@ -11,28 +11,29 @@ const AccordionBlock: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
-
-
   return (
-    <div className="flex gap-8">
+    <div className="flex flex-col gap-8 md:flex-row">
       {/* Accordion */}
-      <div className="w-1/2 rounded-4xl overflow-hidden">
+      <div className="w-full md:w-1/2 rounded-4xl overflow-hidden">
         <div
-          className={`flex flex-col justify-center items-center px-8 py-10 ${isOpen ? 'bg-background text-primary' : 'bg-primary text-white'
-            } cursor-pointer`}
+          className={`min-h-[194px] flex flex-col justify-center items-center px-8 pt-5 pb-10 cursor-pointer 
+            ${isOpen ? 'bg-background text-primary' : 'bg-primary text-white'}
+          `}
           onClick={toggleOpen}
         >
-          <h2 className="font-normal text-2xl mb-4">{dictionary.family.about.desc}</h2>
-          {!isOpen && <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="w-4 h-4 text-gray-700"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-          </svg>}
+          <h2 className="font-normal text-2xl mb-8 leading-7">{dictionary.family.about.desc}</h2>
+          {!isOpen && (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-4 h-4 text-gray-700"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          )}
         </div>
 
         <AnimatePresence initial={false}>
@@ -42,7 +43,7 @@ const AccordionBlock: React.FC = () => {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.5, ease: [0.42, 0, 0.58, 1] }}
-              className="bg-background"
+              className="bg-background flex flex-col gap-y-10"
             >
               {dictionary.family.about.conditions.map((item, index) => (
                 <motion.div
@@ -51,9 +52,9 @@ const AccordionBlock: React.FC = () => {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                   transition={{ duration: 0.3, delay: index * 0.05 }}
-                  className="p-4 border-b border-accent"
+                  className="px-8"
                 >
-                  <h3 className="font-medium text-textPrimary">{item.title}</h3>
+                  <h3 className="font-medium text-textPrimary text-2xl">{item.title}</h3>
                   <div className="flex items-start mt-4 gap-4">
                     <svg className='min-w-6 min-h-6' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1 7.29883L4.63636 11.0488C6.3475 6.13347 7.77256 3.97655 11 1.04883" stroke="#A9448B" strokeWidth="1.71" strokeLinecap="round" strokeLinejoin="round" />
@@ -68,8 +69,8 @@ const AccordionBlock: React.FC = () => {
       </div>
 
       {/* Sticky Side Panel */}
-      <div className='w-1/2'>
-        <RequestConsultation sticky dictionary={dictionary} />
+      <div className="w-full md:w-1/2">
+        <RequestConsultation sticky dictionary={dictionary} start />
       </div>
     </div>
   );

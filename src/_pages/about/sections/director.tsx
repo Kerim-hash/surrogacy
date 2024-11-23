@@ -12,7 +12,7 @@ const Director: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
                     <div className="desc2 italic">{dictionary.about.director.supTitle}</div>
                     <div className="space-y-5 mt-6">
                         {dictionary.about.director.desc.map((desc) => {
-                            return <p className="desc2 indent-8 italic">{desc}</p>
+                            return <p key={desc} className="desc2 indent-8 italic">{desc}</p>
                         })}
                     </div>
                 </div>

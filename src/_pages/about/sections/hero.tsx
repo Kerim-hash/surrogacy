@@ -1,9 +1,6 @@
-'use client';
-
-import { useDictionary } from '@/shared/lib/hooks';
 import Image from 'next/image';
 import { FC } from 'react';
-import heroImage from "@/assets/about.png";
+import heroImage from "@/assets/About/hero.webp";
 import ArrowDown from '@/assets/arrow-down.svg';
 import { DictionaryType } from '@/shared/config/i18n';
 

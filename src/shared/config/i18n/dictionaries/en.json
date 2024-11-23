@@ -2,10 +2,11 @@
   "common": {
     "GetAConsultation": "Get a consultation",
     "contact": "Contact",
-    "RequestConsultation": "Request a Consultation",
-    "RequestConsultationSupTitle": "We are happy to answer your questions"
+    "RequestConsultation": "Get a consultation",
+    "RequestConsultationSupTitle": "We will be happy to answer your questions",
+    "License": "Clinic licenses"
   },
-  "nav": ["Families", "Become a surrogate mother", "Egg donation", "About the clinic", "Contacts"],
+  "nav": ["Families", "Become a surrmother", "Egg donation", "About the clinic", "Contacts"],
   "family": {
     "hero": {
       "title": "Surrogacy Center motherhood",
@@ -172,54 +173,141 @@
     }
   },
   "contacts": {
-      "title": "Contacts",
-      "supTitle": "You can contact us in a number of ways"
+    "title": "Contacts",
+    "supTitle": "You can contact us in a number of ways"
   },
   "eggDonation": {
-     "hero": {
+    "hero": {
       "title": "Egg donation - give a chance for happiness"
-     },
-     "about": {
+    },
+    "about": {
       "title": "What is egg donation?",
       "desc": "Egg donation is a noble opportunity to help those who dream of having children but cannot have them for medical reasons. By joining the program, you can give the joy of motherhood to others while receiving a full medical examination and compensation.",
       "supTitle": "Who can become a donor?",
       "underTitle": "You must meet a few basic criteria to qualify for the program:",
-      "list" :[
+      "list": [
         "Ages 20 to 35.",
         "Good physical and mental health.",
         "Absence of hereditary diseases and bad habits.",
         "Having a healthy child of your own is an advantage."
+      ]
+    },
+    "stages": {
+      "title": "Stages of the program",
+      "stagesList": [
+        {
+          "title": "Initial consultation and application",
+          "desc": "Our experts will explain the program, answer your questions, and conduct an initial assessment."
+        },
+        {
+          "title": "Selecting a questionnaire",
+          "desc": "If your profile is of interest to the family, a manager will contact you and invite you to the clinic to join the program."
+        },
+        {
+          "title": "Medical examination",
+          "desc": "A set of tests and exams to assess your health and readiness for donation."
+        },
+        {
+          "title": "Legal formalization",
+          "desc": "Signing a contract that protects your rights and privacy."
+        },
+        {
+          "title": "Oocyte retrieval procedure",
+          "desc": "The procedure is carried out under anesthesia, takes a few minutes, and the next day you can return to your usual life."
+        },
+        {
+          "title": "Embryo transfer",
+          "desc": "A course of drugs to increase the number of eggs and prepare the recipient's endometrium for the implantation of a fertilized egg."
+        }
+      ]
+    }
+  },
+  "becomeSurrogateMother": {
+    "hero": {
+      "title": "How to become a surrogate mother",
+      "desc": "Becoming a surrogate mother is an opportunity not only to help a family find happiness, but also to receive meaningful support and compensation. We accompany surrogate mothers at every stage, guaranteeing complete safety and care."
+    },
+    "about": {
+      "title": "We Care for You Every Step of the Way",
+      "desc": [
+        "Each surrogate mother is unique to us, and we are genuinely grateful for her willingness to help. We surround you with care and attention to make this journey as smooth and positive as possible.",
+        "You are part of a team creating a miracle. Together, we help fulfill the dream of parenthood for those who have been waiting a long time. Your contribution is invaluable, and we’ll do everything to ensure you feel important and supported."
+      ]
+    },
+    "stages": {
+      "title": "Program Stages",
+      "desc": "Our program includes several key stages, ensuring your safety and support at every step.",
+      "supTitle": "Examinations for entry into the program",
+      "desc1": "In order to participate in a surrogacy program, it is important to make sure you are healthy and ready to carry a child. All exams are organized and paid for by the clinic and are done at a time that is convenient for you. Key steps include:",
+      "stagesProgram": [
+        {
+          "title": "Consultation and Application",
+          "desc": "Initial meeting with a coordinator to discuss all program details"
+        },
+        {
+          "title": "Medical Examination",
+          "desc": "A comprehensive health check to confirm eligibility for the program"
+        },
+        {
+          "title": "Legal Arrangements",
+          "desc": "Signing an agreement that protects your rights and interests throughout the process"
+        },
+        {
+          "title": "Family Selection",
+          "desc": "A joint selection of biological parents for a comfortable partnership"
+        },
+        {
+          "title": "IVF and Embryo Transfer",
+          "desc": "Continuous medical supervision and support throughout the pregnancy"
+        },
+        {
+          "title": "Pregnancy Care",
+          "desc": "Ongoing medical assistance and financial support during each stage of pregnancy"
+        },
+        {
+          "title": "Delivery and Program Completion",
+          "desc": "After the child is born, they are entrusted to the biological parents, concluding the program"
+        },
+        {
+          "title": "Payment Completion",
+          "desc": "Full and guaranteed completion of all compensation"
+        }
       ],
-      "stages": {
-        "title": "Stages of the program",
-        "stagesList": [
-          {
-            "title": "Initial consultation and application",
-            "desc": "Our experts will explain the program, answer your questions, and conduct an initial assessment."
-          },
-          {
-            "title": "Selecting a questionnaire",
-            "desc":"If your profile is of interest to the family, a manager will contact you and invite you to the clinic to join the program."
-          },
-          {
-            "title": "Medical examination",
-            "desc": "A set of tests and exams to assess your health and readiness for donation."
-          },
-          {
-            "title":"Legal formalization",
-            "desc": "Signing a contract that protects your rights and privacy."
-          },
-          {
-            "title": "Oocyte retrieval procedure",
-            "desc": "The procedure is carried out under anesthesia, takes a few minutes, and the next day you can return to your usual life."
-          },
-          {
-            "title": "Embryo transfer",
-            "desc": "A course of drugs to increase the number of eggs and prepare the recipient's endometrium for the implantation of a fertilized egg."
-          }
-        ]
-      }
-     }
+      "stagesList": [
+        {
+          "title": "General medical examination",
+          "desc": "The doctor will assess your health, perform a physical exam, and take a medical history"
+        },
+        {
+          "title": "Blood and urine tests",
+          "desc": "Standard tests to detect possible infections and assess the general condition of the body"
+        },
+        {
+          "title": "Gynecological examination",
+          "desc": "swab from the external pharynx of the cervix, vaginal vault, urethra"
+        },
+        { 
+          "title": "Hormone tests",
+          "desc": "Hormone tests can help confirm your ability to carry a pregnancy to term."
+        },
+        {
+          "title": "Psychological counseling",
+          "desc": "A conversation with a psychologist to confirm your psychological readiness for the program."
+        },
+        {
+          "title": "Examinations as indicated",
+          "desc": "Additional tests may be ordered if necessary to rule out any risks."
+        }
+      ]
+    },
+    "contactUs":{
+      "title": "Contact us",
+      "desc": "If you still have questions or want to learn more about the surrogacy program, our team is here to help. We will answer any questions, explain all the steps, conditions and provide full information about the process."
+    },
+    "accreditation": {
+      "title": "The partner clinic is accredited by the American College of Embryology (ACE).",
+      "desc": "In addition to all the above-mentioned irrefutable advantages, the partner clinic is accredited by the American College of Embryology (ACE), which indicates that the partner clinic relies in its activities on the scientific base of world-class professors. The partner clinic participates in international conferences and carries out its medical activities according to the advanced standards of the college"
+    }
   },
   "footer": {
     "subtitles": ["Office", "Work schedule", "We are on social networks"],

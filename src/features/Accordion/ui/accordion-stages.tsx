@@ -12,64 +12,76 @@ const AccordionStages: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => 
         setExpandedIndex(expandedIndex === index ? null : index);
     };
 
+    const cardVariants = {
+        hidden: { opacity: 0, scale: 0.95 },
+        visible: { opacity: 1, scale: 1 },
+    };
+
+    const arrowVariants = {
+        open: { rotate: 180 },
+        closed: { rotate: 0 },
+    };
+
+    const contentVariants = {
+        hidden: { height: 0, opacity: 0 },
+        visible: { height: "auto", opacity: 1 },
+    };
+
     return (
-        <div className="flex flex-wrap gap-4 gap-y-10">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-6">
             {dictionary.family.programStages.data.map((item, index) => (
                 <motion.div
-                    key={index}
-                    className="flex flex-col justify-between p-6 bg-white rounded-4xl w-full sm:w-[calc(33.333%-1rem)] transition-all"
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
+                    key={`${item.title}+${index}`}
+                    className="flex flex-col bg-white rounded-4xl p-6 w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1rem)]"
+                    variants={cardVariants}
+                    initial="hidden"
+                    animate="visible"
                     transition={{
-                        duration: 0.5, // Увеличено время для плавности
-                        ease: [0.25, 0.1, 0.25, 1], // Плавное замедление в конце
+                        duration: 0.6,
+                        ease: "easeOut",
                     }}
                 >
-                    <div
-                        className="flex items-center justify-center w-10 h-10 rounded-full bg-accent text-white font-bold mb-4"
-                    >
+                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#E4B1AB] text-white font-bold mb-4 text-lg">
                         {index + 1}
                     </div>
 
-                    <h3 className="font-medium text-textPrimary mb-2">
+                    <h3 className="font-medium text-xl text-textPrimary mb-4">
                         {item.title}
                     </h3>
 
-                    <div className="flex-1">
+                    <div className="flex-1 overflow-hidden">
                         <AnimatePresence initial={false}>
                             {expandedIndex === index ? (
                                 <motion.div
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
+                                    variants={contentVariants}
+                                    initial="hidden"
+                                    animate="visible"
+                                    exit="hidden"
                                     transition={{
-                                        duration: 0.5, // Увеличено время
-                                        ease: "easeInOut", // Мягкий переход
+                                        duration: 0.5,
+                                        ease: "easeInOut",
                                     }}
                                 >
-                                    <p className="text-textSecondary">{item.desc}</p>
+                                    <p className="text-textSecondary text-base">{item.desc}</p>
                                 </motion.div>
                             ) : (
-                                <p className="text-textSecondary line-clamp-4">
+                                <p className="text-textSecondary text-base line-clamp-4">
                                     {item.desc}
                                 </p>
                             )}
                         </AnimatePresence>
                     </div>
 
-                    {/* Иконка внизу */}
                     <div
-                        className="mt-4 p-3 flex justify-end cursor-pointer"
+                        className="mt-4 flex justify-end cursor-pointer"
                         onClick={() => toggleAccordion(index)}
                     >
                         <motion.div
-                            animate={{ rotate: expandedIndex === index ? 180 : 0 }}
-                            transition={{
-                                duration: 0.5, // Увеличено время вращения
-                                ease: [0.25, 0.1, 0.25, 1], // Плавный эффект
-                            }}
+                            variants={arrowVariants}
+                            animate={expandedIndex === index ? "open" : "closed"}
+                            transition={{ duration: 0.4 }}
                         >
-                            <Image src={ArrowDown} alt="arrow-down" />
+                            <Image src={ArrowDown} alt="Toggle Accordion" />
                         </motion.div>
                     </div>
                 </motion.div>

@@ -10,6 +10,7 @@ import Info from './section/Info';
 import ProgramStages from './section/programStages';
 import RequestConsultation from '@/shared/ui/RequestConsultation';
 import Law from './section/law';
+import Data from './section/data';
 
 const HomePage: FC = () => {
 	const { dictionary } = useDictionary();
@@ -19,16 +20,17 @@ const HomePage: FC = () => {
 			<Hero dictionary={dictionary} />
 			<About dictionary={dictionary} />
 			<Video dictionary={dictionary} />
-			<Animation  />
+			<Animation />
 			<Info dictionary={dictionary} />
 			<ProgramStages dictionary={dictionary} />
-			<div className='container pt-[100px]'>
-			<RequestConsultation dictionary={dictionary} />
+			<div className='container mt-[60px]  md:mt-[100px]'>
+				<RequestConsultation dictionary={dictionary} />
 			</div>
+			<Data />
 			<Law dictionary={dictionary} />
-			<div className='container pt-[100px]'>
-			<RequestConsultation dictionary={dictionary} />
-			</div>
+			<div className='container  mt-[60px]  md:mt-[100px]'>
+				<RequestConsultation dictionary={dictionary} />
+			</div> 
 		</main>
 	);
 };
