@@ -11,7 +11,7 @@ const ContactsPage: FC = () => {
     return <div>
         <Hero dictionary={dictionary} />
         <ContactsSection dictionary={dictionary} />
-        <div className='container pt-[100px]'>
+        <div className='container mt-[60px] md:mt-[100px]'>
             <RequestConsultation dictionary={dictionary} />
         </div>
     </div>;

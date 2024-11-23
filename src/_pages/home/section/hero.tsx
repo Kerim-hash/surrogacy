@@ -3,7 +3,7 @@ import Image from "next/image";
 import heroImageWebp from "@/assets/Home/hero.webp";
 import ArrowDown from "@/assets/arrow-down.svg";
 import { DictionaryType } from "@/shared/config/i18n";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const Hero: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
   // Анимации
@@ -70,14 +70,14 @@ const Hero: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
     },
   };
 
-  const arrowVariants = {
+  const arrowVariants: Variants = {
     initial: { opacity: 0, y: 0 },
     animate: {
       opacity: 1,
       y: 10,
       transition: {
         repeat: Infinity,
-        repeatType: "reverse",
+        repeatType: "reverse", // No need for 'as const' with correct typing
         duration: 1.5,
         ease: "easeInOut",
       },
@@ -139,7 +139,7 @@ const Hero: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
           <Image
             src={heroImageWebp}
             quality={100}
-            className="rounded-full object-cover mx-auto w-[300px] h-[300px] lg:w-[500px] lg:h-[500px]"
+            className="rounded-full object-cover mx-auto w-[270px] h-[270px] lg:w-[500px] lg:h-[500px]"
             alt="Hero Image"
             width={469}
             height={469}

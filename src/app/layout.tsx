@@ -50,7 +50,7 @@ export default function RootLayout({
 					}}
 				/>
 			</head>
-			<body className={`bg-[#F5F5F7] ${openSans.className} ${lato.className} ${oxygen.className}`}>{children}</body>
+			<body >{children}</body>
 		</html>
 	);
 }

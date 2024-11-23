@@ -5,7 +5,7 @@ import Head from 'next/head';
 const page = () => {
 	return <>
 	   	<Meta title='o nas' description='2' />
-		<AboutPage />;
+		<AboutPage />
 	</>
 };
 export default page;

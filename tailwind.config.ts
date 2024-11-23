@@ -114,7 +114,10 @@ const config: Config = {
           '@apply px-4 py-2 text-base': {},
         },
         '.btn-lg': {
-          '@apply tracking-wide px-6 py-7 text-lg text-desc1': {},
+          '@apply px-4 py-4 text-xl': {},
+          '@screen md': {
+            '@apply tracking-wide px-6 py-7 text-lg text-desc1': {}, // для экранов от md размер остаётся 4xl
+          },
         },
         '.title': {
           '@apply tracking-tight text-4xl text-textPrimary font-normal leading-title-line': {},
@@ -127,7 +130,10 @@ const config: Config = {
           },
         },
         '.desc1': {
-          '@apply font-openSans text-desc1 font-normal leading-28p': {},
+          '@apply font-openSans text-lg font-normal leading-28p': {},
+          '@screen sm': {
+            '@apply text-desc1': {}, // уменьшаем размер и интерлинейку для экранов sm
+          },
         },
         '.desc2': {
           '@apply font-openSans text-desc2 text-textSecondary font-normal leading-22p4': {},

@@ -62,7 +62,7 @@ const Footer: FC<{ dictionary: DictionaryType; lang: string }> = ({ dictionary, 
           </div>
           <div>
             <h4 className="subtitle mb-2">{dictionary.footer.subtitles[2]}</h4>
-            <div className="flex gap-8 mt-4">
+            <div className="flex gap-3 md:gap-8 mt-4">
               {Links.map((link, index) => (
                 <a key={index} className="desc2 underline" href={link.link}>
                   {link.name}
@@ -78,7 +78,7 @@ const Footer: FC<{ dictionary: DictionaryType; lang: string }> = ({ dictionary, 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.720806136616!2d74.59064007631812!3d42.857628071150955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb62aa001c9df%3A0xa09bde56c77da871!2z0YPQuy4g0JPQvtGA0YzQutC-0LPQviAxMjksIDEyOSDQk9C-0YDRjNC60LjQuSDQutOp0YfTqdGB0q8sINCR0LjRiNC60LXQuiA3MjAwNTI!5e0!3m2!1sru!2skg!4v1731648914702!5m2!1sru!2skg"
             width="400"
             height="200"
-            className="border-none rounded-3xl"
+            className="border-none rounded-3xl max-w-[100%]"
             allowFullScreen={false}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

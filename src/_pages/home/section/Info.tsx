@@ -19,12 +19,12 @@ const Info: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
     });
 
     const infoData = [
-        { src: Info1, text: "Selection of surrogate mother - without waiting" },
-        { src: Info2, text: "Personalized assistance throughout the process" },
-        { src: Info3, text: "Comprehensive medical support" },
-        { src: Info4, text: "Legal guidance and support" },
-        { src: Info5, text: "Transparent communication at every step" },
-        { src: Info6, text: "Post-birth care and follow-up" },
+        { src: Info1, text: dictionary.family.info.information[0] },
+        { src: Info2, text: dictionary.family.info.information[1] },
+        { src: Info3, text: dictionary.family.info.information[2] },
+        { src: Info4, text: dictionary.family.info.information[3] },
+        { src: Info5, text: dictionary.family.info.information[4] },
+        { src: Info6, text: dictionary.family.info.information[5] },
     ];
 
     // Анимации
