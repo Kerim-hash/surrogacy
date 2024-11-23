@@ -7,10 +7,10 @@ import About from './section/about';
 import Video from './section/video';
 import Animation from './section/Animation';
 import Info from './section/Info';
-import ProgramStages from './section/programStages';
 import RequestConsultation from '@/shared/ui/RequestConsultation';
 import Law from './section/law';
 import Data from './section/data';
+import ProgramStages from './section/programStages';
 
 const HomePage: FC = () => {
 	const { dictionary } = useDictionary();
